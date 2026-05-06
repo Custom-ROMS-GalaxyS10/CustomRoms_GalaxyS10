@@ -1,0 +1,19 @@
+body {
+    background: #0f172a;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+.box {
+    background: #1e293b;
+    margin: 15px auto;
+    padding: 15px;
+    width: 300px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}

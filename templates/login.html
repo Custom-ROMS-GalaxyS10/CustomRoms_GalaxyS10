@@ -1,0 +1,25 @@
+<h1>Login</h1>
+
+<input id="user" placeholder="login">
+<input id="pass" type="password" placeholder="hasło">
+
+<button onclick="login()">Zaloguj</button>
+
+<script>
+function login() {
+    let u = document.getElementById("user").value;
+    let p = document.getElementById("pass").value;
+
+    if (u.length < 3 || p.length < 6 || p.length > 13) {
+        alert("Złe dane");
+        return;
+    }
+
+    if (!/^[a-z]+$/.test(u)) {
+        alert("Tylko małe litery");
+        return;
+    }
+
+    alert("OK (demo login)");
+}
+</script>
